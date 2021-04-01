@@ -19,9 +19,11 @@ Steps:
 	heroku login
 	```
 
-	Run composer update (generators `vendor` and `composer.lock` files):
+	Run composer update (generators `vendor` and `composer.lock` files) and commit this change:
 	```bash
 	composer update
+	git add composer.lock
+	git commit -m "Added composer.lock"
 	```
 
 	Add repo for new app:
